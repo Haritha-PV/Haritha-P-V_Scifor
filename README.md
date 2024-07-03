@@ -1,1 +1,0 @@
-This GitHub repository documents my training and internship program at Meta SciFor Technologies in Data Science. Designed to bridge the gap between academic learning and real-world application, the program includes rigorous training and hands-on projects. It documents my journey, featuring exercises and projects that showcase the practical skills I’ve acquired
