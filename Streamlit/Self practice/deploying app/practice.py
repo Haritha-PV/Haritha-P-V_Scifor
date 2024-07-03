@@ -6,7 +6,7 @@ st.subheader('_Streamlit_ is :blue[cool] :sunglasses:')
 st.title('My :red[Streamlit] App')
 
 # Display an image with a caption
-st.image("coding.jpg", caption="deploying", width=800)
+st.image("images.png", caption="STREAMLIT", width=800)
 
 # Display a reset button
 st.button("Reset", type="primary")
