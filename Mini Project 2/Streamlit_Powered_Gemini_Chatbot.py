@@ -18,7 +18,7 @@ load_dotenv()
 
 # Streamlit page configuration
 st.set_page_config(
-    page_title=" Gemini !",
+    page_title=" Gemini",
     page_icon=":gem:",
     layout="wide",  # Changed to wide for more space
     initial_sidebar_state="expanded"
@@ -34,7 +34,7 @@ st.image("C:/Users/harit/OneDrive/Desktop/Meta Scifor technologies/Haritha-P-V_S
 # Streamlit app title with styling
 st.markdown("<h1 style='text-align: center;'>Hello, How can I help you?</h1>", unsafe_allow_html=True)
 
-# Set up Google Gemini-Pro AI model
+# Set up Google Gemini-pro AI model
 gen_ai.configure(api_key=GOOGLE_API_KEY)
 model = gen_ai.GenerativeModel('gemini-pro')
 
@@ -57,7 +57,6 @@ if st.sidebar.button("💬 Start New Chat"):
 
 # Sidebar for session history and controls
 st.sidebar.title(":blue[SESSION HISTORY]")
-
 st.sidebar.download_button("⬇️ Download History", data=str(st.session_state.chat_session.history), file_name="chat_history.txt")
 
 # Display chat history with styling
@@ -68,6 +67,7 @@ for message in st.session_state.chat_session.history:
             st.markdown(f"{message.parts[0].text}", unsafe_allow_html=True)
         else:
             st.markdown(f"{message.parts[0].text}", unsafe_allow_html=True)
+
 # User input for chat with loading animation
 user_input = st.chat_input("Ask Gemini...")
 if user_input:
