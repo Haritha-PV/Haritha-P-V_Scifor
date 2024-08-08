@@ -26,7 +26,6 @@ st.set_page_config(
 
 # Retrieve API key from environment variables
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-print(GOOGLE_API_KEY)
 
 # Display the image at the top
 st.image("C:/Users/harit/OneDrive/Desktop/Meta Scifor technologies/Haritha-P-V_Scifor/Haritha-P-V_Scifor/Mini_Project_2/gemini.png", use_column_width=True)
