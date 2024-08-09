@@ -9,12 +9,7 @@ and incorporates several interactive features to enhance user experience.'''
 
 #Importing Libraries
 import streamlit as st
-from dotenv import load_dotenv
 import google.generativeai as gen_ai
-import os
-
-# Load environment variables
-load_dotenv()
 
 # Streamlit page configuration
 st.set_page_config(
@@ -25,7 +20,7 @@ st.set_page_config(
 )
 
 # Retrieve API key from environment variables
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 
 # Display the image at the top
 st.image("C:/Users/harit/OneDrive/Desktop/Meta Scifor technologies/Haritha-P-V_Scifor/Haritha-P-V_Scifor/Mini_Project_2/gemini.png", use_column_width=True)
