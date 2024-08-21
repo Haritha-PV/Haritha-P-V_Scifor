@@ -19,7 +19,7 @@ import joblib
 st.set_page_config(
     page_title="Fitness Tracker App",
     page_icon=":bar_chart:",  # Emoji for the page icon
-    layout="wide"  # Optional: Use "wide" or "centered" layout
+    layout="wide"  
 )
 
 # Load data
